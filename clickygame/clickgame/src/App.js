@@ -20,14 +20,16 @@ class App extends Component {
   
     // Map over this.state.friends and render a FriendCard component for each friend object
     render() {
+        // return (
+        //     <Col sm="6">
+        // )
       return (
         <Wrapper>
-          <Title>Friends List</Title>
+          <Title>CLICKY GAME</Title>
           {this.state.friends.map(friend => (
             <FriendCard
               removeFriend={this.removeFriend}
               id={friend.id}
-              
               name={friend.name}
               image={friend.image}
           
